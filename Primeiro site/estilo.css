@@ -5,6 +5,7 @@
     --amarelo_Mostarda: rgb(223, 193, 22);
     --marrom_cafe: rgb(68, 54, 34);
     --preto: rgb(18, 18, 23);
+    --roxo: rgb(64, 86, 175);
 }
 /*arummar depois*/
 
@@ -18,10 +19,11 @@
 body, html{
     background-color: var(--preto);
     color: white;
+    width: 100%;
 }
 
 .hero{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -77,10 +79,11 @@ nav > ul > li > a:hover{
 }
 
 .cont{
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    transform: translateY(50%);
+    position: static;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h1{
@@ -97,11 +100,15 @@ h4{
     letter-spacing: 2px;
     font-size: 20px;
 }
-
+.jornal{
+    display: block;
+    
+}
 .jornal form{
     width: 380px;
     max-width: 100%;
     position: relative;
+    display: block;
     
 }
 
@@ -128,6 +135,17 @@ h4{
     top: 4px;
     
 }
+
+.cont .card{
+    position: static;
+    background-image: url(/imagens/Matheus\ -\ preto\ e\ branco.jpeg);
+    background-size: cover;
+    background-position: top right;
+    height: 550px;
+    
+  
+}
+    
 
 .sobre{
     width: 100%;
