@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, #E65763, #34073D);
+    text-align: center;
+    padding-top: 8%;
+    color: white;
+}
+
+#task-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Task form */
+
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid #34073D;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    color: #34073D;
+    background-color: #fff;
+}
+
+#add-task-form input::placeholder{
+    color: #34073D;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-btn{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #34073D;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+
+}
+
+#add-btn:hover{
+    background-color: #34073D;
+    color: #fff;
+    
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+/* task cotainer */
+
+#task-list{
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 2px solid #34073D;
+    background-color: #fff;
+    color: #34073D;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#task-list ion-icon{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+    
+}
+
+h2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    background-color: #09E01B;
+    color: #fff;
+}
+
+.remove-btn{
+    right: 0px;
+    
+}
+
+.remove-btn:hover{
+    background-color: #eb0927;
+    color: #fff;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: #34073D;
+    color: #fff;
+    text-decoration: line-through;
+}
