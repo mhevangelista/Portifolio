@@ -11,7 +11,8 @@
 }
 
 body{
-    background-color: rgba(0, 0, 0, 0.855);
+    background-image: linear-gradient(to right, rgb(75, 18, 42), rgb(16, 10, 67));
+    padding: 5%;
 }
 
 .container{
@@ -65,5 +66,5 @@ h1{
 
 .butao a:hover{
     color: rgb(34, 45, 91);
-    background-color: rgb(246, 236, 217);
+    background-color: #fff;
 }
